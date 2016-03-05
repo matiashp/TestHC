@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40907A53-D2DF-49BE-A373-82A93B188F2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>historiasClinicas.My.MyApplication</StartupObject>
+    <RootNamespace>historiasClinicas</RootNamespace>
+    <AssemblyName>historiasClinicas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>\\marcelo-note\INVITADO\HC\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\marcelo-note\INVITADO\</UpdateUrl>
+    <TargetCulture>es-AR</TargetCulture>
+    <ProductName>Historias Clinicas</ProductName>
+    <PublisherName>Marcelo L. Ponce F. - Yellow Soft ®</PublisherName>
+    <SuiteName>Soluciones para medicina</SuiteName>
+    <WebPage>www.google.com.ar</WebPage>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>D:\INVITADO</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>18742E1E360303CF9630348FF739D886EBE3C704</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>historiasClinicas_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'producción|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\producción\</OutputPath>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>None</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACCESO\enfermedadesAcceso.vb" />
+    <Compile Include="ACCESO\imagenesAcceso.vb" />
+    <Compile Include="ACCESO\perfilesAcceso.vb" />
+    <Compile Include="ACCESO\medicosAcceso.vb" />
+    <Compile Include="ACCESO\parametrosAcceso.vb" />
+    <Compile Include="ACCESO\proformasAcceso.vb" />
+    <Compile Include="ACCESO\configuracionAcceso.vb" />
+    <Compile Include="ACCESO\consultasAcceso.vb" />
+    <Compile Include="ACCESO\obraSocialAcceso.vb" />
+    <Compile Include="ACCESO\pacientesAcceso.vb" />
+    <Compile Include="ACCESO\temaVisualAcceso.vb" />
+    <Compile Include="ACCESO\valoresAcceso.vb" />
+    <Compile Include="APLICACION\AUXILIARES\ayudaFrm.Designer.vb">
+      <DependentUpon>ayudaFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\ayudaFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\informacionDelSistema_frm.Designer.vb">
+      <DependentUpon>informacionDelSistema_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\informacionDelSistema_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\preguntaFrm.Designer.vb">
+      <DependentUpon>preguntaFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\preguntaFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\codigoFrm.Designer.vb">
+      <DependentUpon>codigoFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\codigoFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\comparativaImagenesFrm.Designer.vb">
+      <DependentUpon>comparativaImagenesFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\comparativaImagenesFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\derivacionFrm.Designer.vb">
+      <DependentUpon>derivacionFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\derivacionFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\dialogoFrm.Designer.vb">
+      <DependentUpon>dialogoFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\dialogoFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\mensajeFrm.Designer.vb">
+      <DependentUpon>mensajeFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\mensajeFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\galeriaDeImagenesFrm.Designer.vb">
+      <DependentUpon>galeriaDeImagenesFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\galeriaDeImagenesFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\galeriaDeImagenesPCFrm.Designer.vb">
+      <DependentUpon>galeriaDeImagenesPCFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\galeriaDeImagenesPCFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\historialRespuestasTratamientoFrm.Designer.vb">
+      <DependentUpon>historialRespuestasTratamientoFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\historialRespuestasTratamientoFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\notasFrm.Designer.vb">
+      <DependentUpon>notasFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\notasFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\colegasDetalle.Designer.vb">
+      <DependentUpon>colegasDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\colegasDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\LISTAS\colegasLista.Designer.vb">
+      <DependentUpon>colegasLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\LISTAS\colegasLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\comentariosFrm.Designer.vb">
+      <DependentUpon>comentariosFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\comentariosFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\CONFIGURACIONES\configuracionesFrm.Designer.vb">
+      <DependentUpon>configuracionesFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\CONFIGURACIONES\configuracionesFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\CONFIGURACIONES\editarTemaVisualFrm.Designer.vb">
+      <DependentUpon>editarTemaVisualFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\CONFIGURACIONES\editarTemaVisualFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\relojFrm.Designer.vb">
+      <DependentUpon>relojFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\relojFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\parametrosDetallesFrm.Designer.vb">
+      <DependentUpon>parametrosDetallesFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\parametrosDetallesFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\LISTAS\parametrosListaFrm.Designer.vb">
+      <DependentUpon>parametrosListaFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\LISTAS\parametrosListaFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\activacionFrm.Designer.vb">
+      <DependentUpon>activacionFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\activacionFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\ALERTAS\mostrarAlerta.Designer.vb">
+      <DependentUpon>mostrarAlerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\ALERTAS\mostrarAlerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\botoneraFrm.Designer.vb">
+      <DependentUpon>botoneraFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\botoneraFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\ALERTAS\AlertaEditar.Designer.vb">
+      <DependentUpon>AlertaEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\ALERTAS\AlertaEditar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\proformasFrm.Designer.vb">
+      <DependentUpon>proformasFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\proformasFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\botonMenuFrm.Designer.vb">
+      <DependentUpon>botonMenuFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\botonMenuFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODELO\ENFERMEDADES.vb" />
+    <Compile Include="MODELO\DISCO_DURO.vb" />
+    <Compile Include="ACTIVACION\InformacionSistema.vb" />
+    <Compile Include="APLICACION\PRINCIPAL\buscarPacienteFrm.Designer.vb">
+      <DependentUpon>buscarPacienteFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\buscarPacienteFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\consultaDetalle.Designer.vb">
+      <DependentUpon>consultaDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\CONSULTA\consultaDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\obraSocialDetalle.Designer.vb">
+      <DependentUpon>obraSocialDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\obraSocialDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\pacienteDetalle.Designer.vb">
+      <DependentUpon>pacienteDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\DETALLES\pacienteDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\LISTAS\obrasSocialesLista.Designer.vb">
+      <DependentUpon>obrasSocialesLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\LISTAS\obrasSocialesLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\LISTAS\pacientesLista.Designer.vb">
+      <DependentUpon>pacientesLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\LISTAS\pacientesLista.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODELO\DUPLA_VALORES.vb" />
+    <Compile Include="MODELO\IMAGENES.vb" />
+    <Compile Include="MODELO\MEDICOS.vb" />
+    <Compile Include="MODELO\PARAMETROS.vb" />
+    <Compile Include="MODELO\PARAMETROS_TIPO.vb" />
+    <Compile Include="MODELO\PARAMETROS_VALORES.vb" />
+    <Compile Include="MODELO\PARAMETROS_MOSTRAR.vb" />
+    <Compile Include="MODELO\PERFIL.vb" />
+    <Compile Include="MODELO\PERFILES_PARAMETROS.vb" />
+    <Compile Include="MODELO\PROFORMAS.vb" />
+    <Compile Include="MODELO\respuestasTratamiento.vb" />
+    <Compile Include="MODELO\TEMAS_VISUALES.vb" />
+    <Compile Include="MODELO\TIPOS_PROFORMAS.vb" />
+    <Compile Include="MODELO\VALORES_CONSULTA.vb" />
+    <Compile Include="MODULOS\modCryptography.vb" />
+    <Compile Include="MODULOS\modFuncionesGenerales.vb" />
+    <Compile Include="MODULOS\modImages.vb" />
+    <Compile Include="MODULOS\modLogManager.vb" />
+    <Compile Include="MODULOS\modUserInteractions.vb" />
+    <Compile Include="MODULOS\modXMLSerialization.vb" />
+    <Compile Include="MODULOS\WMIClass.vb" />
+    <Compile Include="MODULOS\modMail.vb" />
+    <Compile Include="MODULOS\modVariablesConstantes.vb" />
+    <Compile Include="MODULOS\modWMI.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\REPORTES\visualizadorReportes.Designer.vb">
+      <DependentUpon>visualizadorReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\REPORTES\visualizadorReportes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="MODELO\CONFIGURACION.vb" />
+    <Compile Include="MODELO\CONSULTA.vb" />
+    <Compile Include="MODELO\GENERO.vb" />
+    <Compile Include="MODELO\OBRA_SOCIAL.vb" />
+    <Compile Include="MODELO\PACIENTE.vb" />
+    <Compile Include="MODULOS\modTextFileAccess.vb" />
+    <Compile Include="MODULOS\modActivacionLicencia.vb" />
+    <Compile Include="MODULOS\modAccessOLEDBConnection.vb" />
+    <Compile Include="MODULOS\modConfiguracion.vb" />
+    <Compile Include="APLICACION\PRINCIPAL\principalFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APLICACION\PRINCIPAL\principalFrm.Designer.vb">
+      <DependentUpon>principalFrm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\modErrorsHandlingAndSendComments.vb" />
+    <Compile Include="MODULOS\modAuxiliaryFunctions.vb" />
+    <Compile Include="MODULOS\reporteHTML.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\presentacionFrm.Designer.vb">
+      <DependentUpon>presentacionFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="APLICACION\AUXILIARES\presentacionFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="APLICACION\AUXILIARES\ayudaFrm.resx">
+      <DependentUpon>ayudaFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\AUXILIARES\informacionDelSistema_frm.resx">
+      <DependentUpon>informacionDelSistema_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\AUXILIARES\preguntaFrm.resx">
+      <DependentUpon>preguntaFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\CONSULTA\codigoFrm.resx">
+      <DependentUpon>codigoFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\CONSULTA\comparativaImagenesFrm.resx">
+      <DependentUpon>comparativaImagenesFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\CONSULTA\derivacionFrm.resx">
+      <DependentUpon>derivacionFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\AUXILIARES\dialogoFrm.resx">
+      <DependentUpon>dialogoFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\AUXILIARES\mensajeFrm.resx">
+      <DependentUpon>mensajeFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\CONSULTA\galeriaDeImagenesFrm.resx">
+      <DependentUpon>galeriaDeImagenesFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\CONSULTA\galeriaDeImagenesPCFrm.resx">
+      <DependentUpon>galeriaDeImagenesPCFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\CONSULTA\historialRespuestasTratamientoFrm.resx">
+      <DependentUpon>historialRespuestasTratamientoFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\CONSULTA\notasFrm.resx">
+      <DependentUpon>notasFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\colegasDetalle.resx">
+      <DependentUpon>colegasDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\LISTAS\colegasLista.resx">
+      <DependentUpon>colegasLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\PRINCIPAL\comentariosFrm.resx">
+      <DependentUpon>comentariosFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\CONFIGURACIONES\configuracionesFrm.resx">
+      <DependentUpon>configuracionesFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\CONFIGURACIONES\editarTemaVisualFrm.resx">
+      <DependentUpon>editarTemaVisualFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\PRINCIPAL\relojFrm.resx">
+      <DependentUpon>relojFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\parametrosDetallesFrm.resx">
+      <DependentUpon>parametrosDetallesFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\LISTAS\parametrosListaFrm.resx">
+      <DependentUpon>parametrosListaFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\PRINCIPAL\activacionFrm.resx">
+      <DependentUpon>activacionFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\ALERTAS\mostrarAlerta.resx">
+      <DependentUpon>mostrarAlerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\PRINCIPAL\botoneraFrm.resx">
+      <DependentUpon>botoneraFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\PRINCIPAL\botonMenuFrm.resx">
+      <DependentUpon>botonMenuFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\PRINCIPAL\buscarPacienteFrm.resx">
+      <DependentUpon>buscarPacienteFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\CONSULTA\consultaDetalle.resx">
+      <DependentUpon>consultaDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\obraSocialDetalle.resx">
+      <DependentUpon>obraSocialDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\pacienteDetalle.resx">
+      <DependentUpon>pacienteDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\LISTAS\obrasSocialesLista.resx">
+      <DependentUpon>obrasSocialesLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\LISTAS\pacientesLista.resx">
+      <DependentUpon>pacientesLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\ALERTAS\AlertaEditar.resx">
+      <DependentUpon>AlertaEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\DETALLES\CONSULTA\proformasFrm.resx">
+      <DependentUpon>proformasFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\AUXILIARES\presentacionFrm.resx">
+      <DependentUpon>presentacionFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\REPORTES\visualizadorReportes.resx">
+      <DependentUpon>visualizadorReportes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APLICACION\PRINCIPAL\principalFrm.resx">
+      <DependentUpon>principalFrm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <DesignData Include="FUENTES\Gotham-Bold.ttf" />
+    <None Include="FUENTES\Gotham.ttf" />
+    <None Include="FUENTES\GothamBook.ttf" />
+    <None Include="FUENTES\GothamBookItalic.ttf" />
+    <None Include="FUENTES\GothamLight.ttf" />
+    <None Include="FUENTES\GothamLightItalic.ttf" />
+    <None Include="FUENTES\GothamMedium.ttf" />
+    <None Include="historiasClinicas_ClaveTemporal.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMAGENES\Yellow Soft - Botón Cerrar Gris.jpg" />
+    <None Include="bin\Debug\THEMES\neutral\Yellow Soft - Botón Cerrar Gris.jpg" />
+    <Content Include="icono2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
